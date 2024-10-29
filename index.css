@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --CorPrincipal: #39caff;
+    --corSecundaria: #003585;
+    --CorBackGround: #e1e1e1;
+    --CorBackGround2: #f1f1f1;
+    --CorBackGround3: #fff;
+    --CorTerciaria: #000;
+}
+
+body {
+    background-color: var(--CorBackGround3);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui os elementos verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe 100% da altura da tela */
+    width: 100%;
+}
+
+header {
+    background-color: var(--CorPrincipal);
+    padding: 8px;
+    width: 100%;
+    color: var(--corSecundaria);
+    border-bottom: #003585 16px solid;
+    text-align: center;
+    box-shadow: #00000018 4px 4px 4px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+    flex: 0.2; 
+}
+
+.Container {
+    background-color: var(--CorBackGround2);
+    border: var(--CorPrincipal) 2px solid;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: #00000018 4px 4px 4px;
+}
+
+h2 {
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.caixa {
+    margin: 1.5%;
+    display: flex;
+    width: 150px;
+    padding: 15px 0;
+    border-radius: 8px;
+    background-color: var(--CorBackGround3);
+    flex-direction: column;
+    align-items: center;
+    border: var(--CorBackGround) solid 3px;
+    box-shadow: #00000018 4px 4px 4px;
+}
+
+#circular-progress1{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: conic-gradient(var(--CorPrincipal) 200deg, var(--CorBackGround) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    
+}
+
+#circular-progress1::before{
+    content: "";
+    position: absolute;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+#circular-progress2{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: conic-gradient(var(--CorPrincipal) 200deg, var(--CorBackGround) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    
+}
+
+#circular-progress2::before{
+    content: "";
+    position: absolute;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#circular-progress3{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: conic-gradient(var(--CorPrincipal) 200deg, var(--CorBackGround) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    
+}
+
+#circular-progress3::before{
+    content: "";
+    position: absolute;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+#circular-progress4{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: conic-gradient(var(--CorPrincipal) 200deg, var(--CorBackGround) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    
+}
+
+#circular-progress4::before{
+    content: "";
+    position: absolute;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #39caff;
+    border-top: #003585 8px solid;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    height: 12vh;
+    box-shadow: #00000018 4px 4px 8px;
+    
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* Alinha os containers Sensores e Atuadores em uma única coluna */
+    }
+    
+    .container2 {
+        grid-template-columns: repeat(2, 1fr); /* Itens dentro das seções são organizados um embaixo do outro em telas pequenas */
+    }
+}
